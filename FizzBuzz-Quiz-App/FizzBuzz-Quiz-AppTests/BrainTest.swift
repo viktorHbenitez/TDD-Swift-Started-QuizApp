@@ -1,14 +1,13 @@
 //
-//  FizzBuzz_Quiz_AppTests.swift
+//  BrainTest.swift
 //  FizzBuzz-Quiz-AppTests
 //
-//  Created by Victor Hugo Benitez Bosques on 30/11/20.
+//  Created by Victor Hugo Benitez Bosques on 01/12/20.
 //
 
 import XCTest
-@testable import FizzBuzz_Quiz_App
 
-class FizzBuzz_Quiz_AppTests: XCTestCase {
+class BrainTest: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
