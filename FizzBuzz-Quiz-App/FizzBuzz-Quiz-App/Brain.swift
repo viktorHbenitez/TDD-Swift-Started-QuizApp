@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+struct Brain {
+    
+    func isDivisibleByThree(number: Int) -> Bool{
+        return (number % 3 == 0)
+    }
+}
