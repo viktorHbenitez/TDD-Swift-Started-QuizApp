@@ -19,8 +19,6 @@ class BrainTest: XCTestCase {
     
     // Test Case: Our first Test that our ap can tell if a number is divisible by three
     func testGiveNumberIsDivisibleByThree(){
-
-        // act or when
         let result = brain.isDivisibleByThree(number: 3)
         XCTAssertEqual(result, true)
     }
@@ -31,31 +29,49 @@ class BrainTest: XCTestCase {
     }
     
     func testGivenNumberIsDivisibleByFive(){
-        
         let result = brain.isDivisibleByFive(number: 5)
         XCTAssertEqual(result, true)
-        
     }
     
     func testGivenInNotDivisibleByFive(){
         let result = brain.isDivisibleByFive(number: 3)
-        
         XCTAssertEqual(result, false)
-        
-        
     }
     
     func testGivenIsDivisibleByFifteen(){
-        
         let result = brain.isDivisibleByFifteen(number: 15)
-        
         XCTAssertEqual(result, true)
-        
     }
     
     func testGivenNumberIsDivisibleByFifteen(){
         let result = brain.isDivisibleByFifteen(number: 3)
         XCTAssertEqual(result, false)
+    }
+    
+    func testSayNothingReturnNumber(){
+        let result = brain.check(number: 1)
+        XCTAssertEqual(result, "1")
+    }
+    
+    func testSayNothingReturnOtherNumber(){
+        let result = brain.check(number: -1)
+        XCTAssertEqual(result, "-1")
+    }
+    
+    
+    func testSayFizz(){
+        let result = brain.check(number: 3)
+        XCTAssertEqual(result, "Fizz")
+    }
+    
+    func testSayBuzz(){
+        let result = brain.check(number: 5)
+        XCTAssertEqual(result, "Buzz")
+    }
+    
+    func testSayFizzBuzz(){
+        let result = brain.check(number: 15)
+        XCTAssertEqual(result, "FizzBuzz")
     }
 
 }
