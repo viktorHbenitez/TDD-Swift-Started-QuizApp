@@ -55,6 +55,15 @@ If you want to add new funcionalities you need to write more tests
 
 
 
+#### However, there are 3 stages in the TDD cycle:
+
+1. **RED** — Write a test, and watch it fail.
+2. **GREEN** — Write just enough code to make your test pass.
+3. **REFACTOR** — Clean up existing code.
+4. Repeat the cycle until you have an app!
+
+
+
 **References:**
 
 [Introduction to TDD](https://medium.com/@ynzc/getting-started-with-tdd-in-swift-2fab3e07204b)
