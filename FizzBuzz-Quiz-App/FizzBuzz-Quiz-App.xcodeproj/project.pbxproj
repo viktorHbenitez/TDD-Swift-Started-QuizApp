@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		CD3988FD2576A49E000B42FE /* BrainTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3988FC2576A49E000B42FE /* BrainTest.swift */; };
 		CD3989022576A6AF000B42FE /* Brain.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3989012576A6AF000B42FE /* Brain.swift */; };
+		CD51E30C2583D4A80035E270 /* GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD51E30B2583D4A80035E270 /* GameTests.swift */; };
+		CD51E3112583D6690035E270 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD51E3102583D6690035E270 /* Game.swift */; };
 		CD5DBDE62575A97400A74485 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5DBDE52575A97400A74485 /* AppDelegate.swift */; };
 		CD5DBDE82575A97400A74485 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5DBDE72575A97400A74485 /* SceneDelegate.swift */; };
 		CD5DBDEA2575A97400A74485 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5DBDE92575A97400A74485 /* ViewController.swift */; };
@@ -38,6 +40,8 @@
 /* Begin PBXFileReference section */
 		CD3988FC2576A49E000B42FE /* BrainTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainTest.swift; sourceTree = "<group>"; };
 		CD3989012576A6AF000B42FE /* Brain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brain.swift; sourceTree = "<group>"; };
+		CD51E30B2583D4A80035E270 /* GameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTests.swift; sourceTree = "<group>"; };
+		CD51E3102583D6690035E270 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		CD5DBDE22575A97400A74485 /* FizzBuzz-Quiz-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FizzBuzz-Quiz-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD5DBDE52575A97400A74485 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD5DBDE72575A97400A74485 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +109,7 @@
 				CD5DBDE72575A97400A74485 /* SceneDelegate.swift */,
 				CD5DBDE92575A97400A74485 /* ViewController.swift */,
 				CD3989012576A6AF000B42FE /* Brain.swift */,
+				CD51E3102583D6690035E270 /* Game.swift */,
 				CD5DBDEB2575A97400A74485 /* Main.storyboard */,
 				CD5DBDEE2575A97500A74485 /* Assets.xcassets */,
 				CD5DBDF02575A97500A74485 /* LaunchScreen.storyboard */,
@@ -118,6 +123,7 @@
 			children = (
 				CD5DBDFE2575A97500A74485 /* Info.plist */,
 				CD3988FC2576A49E000B42FE /* BrainTest.swift */,
+				CD51E30B2583D4A80035E270 /* GameTests.swift */,
 			);
 			path = "FizzBuzz-Quiz-AppTests";
 			sourceTree = "<group>";
@@ -263,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD5DBDEA2575A97400A74485 /* ViewController.swift in Sources */,
+				CD51E3112583D6690035E270 /* Game.swift in Sources */,
 				CD5DBDE62575A97400A74485 /* AppDelegate.swift in Sources */,
 				CD3989022576A6AF000B42FE /* Brain.swift in Sources */,
 				CD5DBDE82575A97400A74485 /* SceneDelegate.swift in Sources */,
@@ -274,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD3988FD2576A49E000B42FE /* BrainTest.swift in Sources */,
+				CD51E30C2583D4A80035E270 /* GameTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

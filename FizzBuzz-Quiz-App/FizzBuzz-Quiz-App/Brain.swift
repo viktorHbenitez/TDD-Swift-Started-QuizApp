@@ -7,6 +7,9 @@
 
 import Foundation
 
+/*
+ We had built the brain of out app. which could check if a number was divisible by 3 or 5, and say either Fizz, Buzz, FizzBuzz or just return the number
+ */
 struct Brain {
     
     func isDivisibleByThree(number: Int) -> Bool{
