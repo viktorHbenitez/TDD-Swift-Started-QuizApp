@@ -9,27 +9,25 @@ import Foundation
 
 
 class Game{
+  
+  var score: Int
+  var brainGame: Brain
+  
+  init(_ brain: Brain = Brain(), _ score: Int = 0){
+    self.score = score
+    self.brainGame = brain
+  }
+  
+  func play(move: String) -> Bool{
+    let result = brainGame.check(number: score + 1)
     
-    var score: Int
-    var brainGame: Brain
-    
-    init(_ brain: Brain = Brain(), _ score: Int = 0){
-        self.score = score
-        self.brainGame = brain
+    if result == move{
+      score += 1
+      return true
     }
-    
-    func play(move: String) -> Bool{
-        score += 1
-        
-        let result = brainGame.check(number: score)
-        
-        if result == move{
-            return true
-        }
-        
-        return false
-    }
-    
+    return false
+  }
+  
 }
-    
-   
+
+
