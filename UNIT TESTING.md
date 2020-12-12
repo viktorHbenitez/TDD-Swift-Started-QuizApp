@@ -62,7 +62,15 @@ If you want to add new funcionalities you need to write more tests
 3. **REFACTOR** — Clean up existing code.
 4. Repeat the cycle until you have an app!
 
+Head on over [Color Hunt](https://colorhunt.co/palettes/popular) and pick a color scheme that catches your eye.
 
+364f6b Main Background
+
+3fc1c9	Text  and Icons
+
+f5f5f5	Losing Background
+
+fc5185	Timer
 
 **References:**
 
