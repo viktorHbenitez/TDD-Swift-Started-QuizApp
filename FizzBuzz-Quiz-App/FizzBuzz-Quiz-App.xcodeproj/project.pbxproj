@@ -17,7 +17,9 @@
 		CD5DBDED2575A97400A74485 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD5DBDEB2575A97400A74485 /* Main.storyboard */; };
 		CD5DBDEF2575A97500A74485 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD5DBDEE2575A97500A74485 /* Assets.xcassets */; };
 		CD5DBDF22575A97500A74485 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD5DBDF02575A97500A74485 /* LaunchScreen.storyboard */; };
-		CD5DBE082575A97500A74485 /* FizzBuzz_Quiz_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5DBE072575A97500A74485 /* FizzBuzz_Quiz_AppUITests.swift */; };
+		E416F75525858AEA00AAF4ED /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E416F75425858AEA00AAF4ED /* ViewControllerTests.swift */; };
+		E453D4DB2585CBCB000203E7 /* ViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E453D4DA2585CBCB000203E7 /* ViewControllerUITests.swift */; };
+		E4CEE0A725893F1B0018DC47 /* Move.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CEE0A625893F1B0018DC47 /* Move.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,8 +55,10 @@
 		CD5DBDF82575A97500A74485 /* FizzBuzz-Quiz-AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FizzBuzz-Quiz-AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD5DBDFE2575A97500A74485 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD5DBE032575A97500A74485 /* FizzBuzz-Quiz-AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FizzBuzz-Quiz-AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD5DBE072575A97500A74485 /* FizzBuzz_Quiz_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzz_Quiz_AppUITests.swift; sourceTree = "<group>"; };
 		CD5DBE092575A97500A74485 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E416F75425858AEA00AAF4ED /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
+		E453D4DA2585CBCB000203E7 /* ViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerUITests.swift; sourceTree = "<group>"; };
+		E4CEE0A625893F1B0018DC47 /* Move.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Move.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,7 @@
 				CD5DBDE72575A97400A74485 /* SceneDelegate.swift */,
 				CD5DBDE92575A97400A74485 /* ViewController.swift */,
 				CD3989012576A6AF000B42FE /* Brain.swift */,
+				E4CEE0A625893F1B0018DC47 /* Move.swift */,
 				CD51E3102583D6690035E270 /* Game.swift */,
 				CD5DBDEB2575A97400A74485 /* Main.storyboard */,
 				CD5DBDEE2575A97500A74485 /* Assets.xcassets */,
@@ -123,6 +128,7 @@
 			children = (
 				CD5DBDFE2575A97500A74485 /* Info.plist */,
 				CD3988FC2576A49E000B42FE /* BrainTest.swift */,
+				E416F75425858AEA00AAF4ED /* ViewControllerTests.swift */,
 				CD51E30B2583D4A80035E270 /* GameTests.swift */,
 			);
 			path = "FizzBuzz-Quiz-AppTests";
@@ -131,8 +137,8 @@
 		CD5DBE062575A97500A74485 /* FizzBuzz-Quiz-AppUITests */ = {
 			isa = PBXGroup;
 			children = (
-				CD5DBE072575A97500A74485 /* FizzBuzz_Quiz_AppUITests.swift */,
 				CD5DBE092575A97500A74485 /* Info.plist */,
+				E453D4DA2585CBCB000203E7 /* ViewControllerUITests.swift */,
 			);
 			path = "FizzBuzz-Quiz-AppUITests";
 			sourceTree = "<group>";
@@ -212,6 +218,7 @@
 					};
 					CD5DBE022575A97500A74485 = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 						TestTargetID = CD5DBDE12575A97400A74485;
 					};
 				};
@@ -272,6 +279,7 @@
 				CD51E3112583D6690035E270 /* Game.swift in Sources */,
 				CD5DBDE62575A97400A74485 /* AppDelegate.swift in Sources */,
 				CD3989022576A6AF000B42FE /* Brain.swift in Sources */,
+				E4CEE0A725893F1B0018DC47 /* Move.swift in Sources */,
 				CD5DBDE82575A97400A74485 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E416F75525858AEA00AAF4ED /* ViewControllerTests.swift in Sources */,
 				CD3988FD2576A49E000B42FE /* BrainTest.swift in Sources */,
 				CD51E30C2583D4A80035E270 /* GameTests.swift in Sources */,
 			);
@@ -289,7 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD5DBE082575A97500A74485 /* FizzBuzz_Quiz_AppUITests.swift in Sources */,
+				E453D4DB2585CBCB000203E7 /* ViewControllerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -529,6 +538,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "FizzBuzz-Quiz-AppUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -538,6 +548,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.victor.FizzBuzz-Quiz-AppUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "FizzBuzz-Quiz-App";
@@ -548,6 +559,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "FizzBuzz-Quiz-AppUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (

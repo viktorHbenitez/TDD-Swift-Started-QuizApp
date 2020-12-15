@@ -10,7 +10,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FizzBuzz_Quiz_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="FizzBuzz_Quiz_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -34,31 +34,47 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gC8-SI-GKK">
                                         <rect key="frame" x="0.0" y="0.0" width="160.5" height="160.5"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="numberButton"/>
                                         <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="70"/>
                                         <state key="normal" title="0" backgroundImage="borderIcon">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cqc-pJ-TYu"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZk-Kt-tKK">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gZk-Kt-tKK">
                                         <rect key="frame" x="172.5" y="0.0" width="161.5" height="160.5"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="fizzButton"/>
                                         <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="70"/>
                                         <state key="normal" image="champagne" backgroundImage="borderIcon">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DW2-fG-cJp"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mL3-QO-2s2">
                                         <rect key="frame" x="0.0" y="172.5" width="160.5" height="161.5"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="buzzButton"/>
                                         <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="70"/>
                                         <state key="normal" image="lightning" backgroundImage="borderIcon">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EXi-GN-yhj"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vya-5J-n7a">
                                         <rect key="frame" x="172.5" y="172.5" width="161.5" height="161.5"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="fizzBuzzButton"/>
                                         <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="70"/>
                                         <state key="normal" image="rocket" backgroundImage="borderIcon">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RjK-vA-pmn"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -96,6 +112,12 @@
                             <constraint firstItem="Ep7-br-pMp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="hJA-Gd-KUp"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="buzzButton" destination="mL3-QO-2s2" id="cRd-ya-33E"/>
+                        <outlet property="fizzButton" destination="gZk-Kt-tKK" id="KKy-VJ-8t1"/>
+                        <outlet property="fizzBuzzButton" destination="vya-5J-n7a" id="mjv-HE-Jya"/>
+                        <outlet property="numberButton" destination="gC8-SI-GKK" id="16B-dY-d0R"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

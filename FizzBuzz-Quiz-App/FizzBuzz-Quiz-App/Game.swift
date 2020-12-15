@@ -18,14 +18,14 @@ class Game{
     self.brainGame = brain
   }
   
-  func play(move: String) -> Bool{
+  func play(move: Move) -> (right: Bool, score: Int){
     let result = brainGame.check(number: score + 1)
     
     if result == move{
       score += 1
-      return true
+      return (true, score)
     }
-    return false
+    return (false, score)
   }
   
 }

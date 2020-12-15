@@ -30,17 +30,18 @@ struct Brain {
     }
     
     
-    func check(number: Int) -> String{
+    func check(number: Int) -> Move{
         switch true {
         case isDivisibleByFifteen(number: number):
-            return "FizzBuzz"
+          return Move.fizzBuzz
         case isDivisibleByFive(number: number):
-            return "Buzz"
+          return Move.buzz
         case isDivisibleByThree(number: number):
-            return "Fizz"
+          return Move.fizz
         default:
-            return "\(number)"
+          return Move.number
         }
     }
     
 }
+
